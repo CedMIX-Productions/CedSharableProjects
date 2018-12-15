@@ -12,6 +12,7 @@ void main()
 	float radius = 0;
 	float angle = 0;
 	float cosineAngle = 0;
+	const float PI = 3.1416;
 	//Length of a chord where radius r and central angle are given
 	//enter values
 	cout << "Enter radius: ";
@@ -19,8 +20,9 @@ void main()
 	cout << "Enter angle: ";
 	cin >> angle;
 	//math engine
-	cosineAngle = cos(angle);
-	L = radius*(sqrt(2 * (1 - cosineAngle)));
+	//cosineAngle = cos(angle);
+	L = radius*(sqrt(2 * (1 - cos(angle*(PI /180)))));
+	//L = radius*(sqrt(2 * (1 - cosineAngle)));
 	//result
 	cout << "The result is: " << L << endl;
 	cout << "Press any key to exit" << endl;

@@ -9,6 +9,7 @@ using namespace std;
 int dataX,dataY;
 char option='A';
 
+//display asterisk
 int asterisk()
 {
 	cout<<"********************************************************"<<endl;

@@ -1,3 +1,4 @@
+//for visual studio 2010 and above only
 //declare cpp library
 #include<iostream>
 #include<iomanip>

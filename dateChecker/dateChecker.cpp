@@ -1,4 +1,4 @@
-//dateChecker.cpp provided by CedMIX Productions
+//Produced by (c) CedMIX Productions 2019
 //include declarations
 #include<iostream>
 #include<string>
@@ -8,7 +8,7 @@ using namespace std;
 //main function
 void main()
 {
-	//initilaize main functions
+	//initialize variables before the loop
 	string dateValue;
 	const char dash = '-';
 	const char one = '1';
@@ -16,7 +16,7 @@ void main()
 	int loop = -1;
 	while (loop != 0)
 	{
-		//initilaize inside the loop
+		//initialize variables during the loop operation
 		int x = 0;
 		int invChar = 0;
 		int validChar = 0;
@@ -26,7 +26,8 @@ void main()
 		const char lolz31st = '1';
 		const char otherMonth1x = '1';
 		const char decemberLimit = '2';
-		long monthError = 0, dateError = 0;
+		long monthError = 0, dateError = 0, dateMonthError = 0;
+		//user input
 		cout << "Enter date (mm/dd/yy) (Enter -1 to end): ";
 		getline(cin, dateValue);
 		//if -1 is typed
@@ -38,7 +39,7 @@ void main()
 		//if it had all 8 characters (mm/dd/yy)
 		if (stringdatelength = stringLengthLimit)
 		{
-			//checks if it is only FORWARD SLASHES
+			//if the located indeces are forward slashes
 			if (dateValue[2] != forwardSlash&&dateValue[5] != forwardSlash)
 			{
 				cout << "Invalid third and sixth character" << endl;
@@ -51,25 +52,31 @@ void main()
 			{
 				cout << "Invalid sixth character" << endl;
 			}
-			//checks the month and date are valid in their if-else statements respectively
-			if (dateValue[0]>otherMonth1x || dateValue[1] >decemberLimit)
+			//checks for a valid month and date format
+			if ((dateValue[0]>otherMonth1x || dateValue[1] >decemberLimit) && (dateValue[3] >= lolz30th &&dateValue[4] > lolz31st))
+			{
+				cout << "Invalid month and date range" << endl;
+				dateMonthError++;
+			}
+			else if (dateValue[0]>otherMonth1x || dateValue[1] >decemberLimit)
 			{
 				cout << "Invaid month range" << endl;
-				monthError = monthError + 1;
+				monthError++;
 			}
 			else if (dateValue[3] >= lolz30th &&dateValue[4] > lolz31st)
 			{
 				cout << "Invalid date range" << endl;
-				dateError = dateError + 1;
+				dateError++;
 			}
-			//adds the 20yy statement if it passes the forward slash check and avoid the month and date errors
-			if (dateValue[2] == forwardSlash&&dateValue[5] == forwardSlash&&monthError!=1&&dateError!=1)
+			//outputs the date with the 20xx
+			if (dateValue[2] == forwardSlash&&dateValue[5] == forwardSlash&&monthError!=1&&dateError!=1&&dateMonthError!=1)
 			{
 				dateValue.insert(6, "20");
 				cout << dateValue << endl;
 			}
 		}
 	}
+	//message when quits
 	cout << "To quit, click close [X] or press any key to exit" << endl;
 	_getch();
 }

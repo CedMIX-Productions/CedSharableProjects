@@ -1,0 +1,2 @@
+# dateChecker
+Program description: The purpose of the program is to validate different dates in the mm/dd/yy format. The program knows about the proper placement of characters in the screen. If the user entered other than forward slashes in the date separator, it will return an "Invalid [x]th character". If the user entered a different date format (ex. dd/mm/yy), the program will return "Invalid date/month". The output must return the mm/dd/yy to mm/dd/20yy in the program.

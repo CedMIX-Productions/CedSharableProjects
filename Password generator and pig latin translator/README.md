@@ -1,4 +1,4 @@
-Password randomizer (password randomizer.cpp)
+# Password randomizer (password randomizer.cpp)
  
 Create a program that allows the user to enter a password. The program then should create and display a new password using the rules.
 Use a sentinel value to end the program. 
@@ -9,7 +9,7 @@ Use a sentinel value to end the program.
  
  
  
-Pig latin translator (pig latin converter.cpp)
+# Pig latin translator (pig latin converter.cpp)
  
 Create a program that allows the user to enter a word. The program should display the word in pig latin form.
 The rules for converting a word into pig latin form are listed in. Use a sentinel value to end the program. 

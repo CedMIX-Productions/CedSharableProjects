@@ -1,4 +1,3 @@
-//Thanks for Vince for providing the fixed up code for pig-latin
 //include declarations
 #include<iostream>
 #include<string>

@@ -10,6 +10,7 @@ using namespace std;
 //main function
 void main()
 {
+	//initialize strings input, first, last and integer vowelLocation
 	string input = "";
 	string first = "";
 	string last = "";

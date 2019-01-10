@@ -27,11 +27,12 @@ void main()
 		{
 			break;
 		}
-		//if the first charcter is a vowel
+		//if the first charcter is an uppercase vowel
 		if (pigLatinInput[0] == Ay || pigLatinInput[0] == Eh || pigLatinInput[0] == Ie || pigLatinInput[0] == Oh || pigLatinInput[0] == Uh || pigLatinInput[0]==waY)
 		{
 			cout << pigLatinInput << "-way" << endl;
 		}
+		//if the first charcter is a lowercase vowel
 		else if (pigLatinInput[0] == aY || pigLatinInput[0] == eH || pigLatinInput[0] == iE || pigLatinInput[0] == oH || pigLatinInput[0] == uH || pigLatinInput[0] == WAy)
 		{
 			cout << pigLatinInput << "-way" << endl;

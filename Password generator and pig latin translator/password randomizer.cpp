@@ -47,8 +47,9 @@ void main()
 		replace(inputKey.begin(), inputKey.end(), '8', 'Z');
 		replace(inputKey.begin(), inputKey.end(), '9', 'Z');
 		replace(inputKey.begin(), inputKey.end(), '0', 'Z');
-		//console output
+		//reverse the output variable inputKey
 		reverse(inputKey.begin(), inputKey.end());
+		//console output
 		cout << "NEW Password: " << inputKey << endl;
 	}
 	//message after break
